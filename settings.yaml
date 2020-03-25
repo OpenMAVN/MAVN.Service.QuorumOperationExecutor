@@ -1,0 +1,41 @@
+QuorumOperationExecutorService:
+  Blockchain:
+    CustomerRegistryAddress:
+      settings-key: PrivateBlockchain-CustomerRegistryContractAddress
+    TokenContractAddress:
+      settings-key: PrivateBlockchain-TokenContractAddress
+    PrivateBlockchainGatewayContractAddress:
+      settings-key: PrivateBlockchainGatewayContractAddress
+    TransactionNodeUrlList:
+      settings-key: QuorumOperationExecutorService-TransactionNodeUrlList
+      types:
+          - JsonArray
+    MaxThreadCount:
+      settings-key: QuorumOperationExecutorService-MaxThreadCount
+      types:
+        - Optional
+    WebSocketsConnectionTimeOut:
+      settings-key: QuorumOperationExecutorService-WebSocketsConnectionTimeOut
+      types:
+        - Optional
+  Db:
+    DataConnString:
+      settings-key: QuorumOperationExecutorService-DataConnString
+    LogsConnString:
+      settings-key: QuorumOperationExecutorService-LogsConnString
+      types:
+        - AzureTableStorage
+SlackNotifications:
+  AzureQueue:
+    ConnectionString:
+      settings-key: SlackNotificationsConnString
+      types:
+        - AzureTableStorage
+    QueueName:
+      settings-key: SlackQueueName
+MonitoringServiceClient:
+  MonitoringServiceUrl:
+    settings-key: MonitoringServiceUrl
+QuorumTransactionSignerService:
+  ServiceUrl:
+    settings-key: QuorumTransactionSignerServiceUrl
