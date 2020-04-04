@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;1705;1591</NoWarn>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1705;1591</NoWarn>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="Dockerfile">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Lykke.Sdk" Version="5.16.0" />
+    <PackageReference Include="LykkeBiz.Logs.Nethereum" Version="1.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\client\MAVN.Service.QuorumOperationExecutor.Client\MAVN.Service.QuorumOperationExecutor.Client.csproj" />
+    <ProjectReference Include="..\MAVN.Service.QuorumOperationExecutor.MsSqlRepositories\MAVN.Service.QuorumOperationExecutor.MsSqlRepositories.csproj" />
+    <ProjectReference Include="..\MAVN.Service.QuorumOperationExecutor.Domain\MAVN.Service.QuorumOperationExecutor.Domain.csproj" />
+    <ProjectReference Include="..\MAVN.Service.QuorumOperationExecutor.DomainServices\MAVN.Service.QuorumOperationExecutor.DomainServices.csproj" />
+  </ItemGroup>
+</Project>
