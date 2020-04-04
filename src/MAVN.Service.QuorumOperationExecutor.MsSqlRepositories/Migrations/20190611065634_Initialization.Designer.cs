@@ -23,7 +23,7 @@ namespace MAVN.Service.QuorumOperationExecutor.MsSqlRepositories.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Lykke.Service.QuorumOperationExecutor.MsSqlRepositories.Entities.OperationEntity", b =>
+            modelBuilder.Entity("MAVN.Service.QuorumOperationExecutor.MsSqlRepositories.Entities.OperationEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
