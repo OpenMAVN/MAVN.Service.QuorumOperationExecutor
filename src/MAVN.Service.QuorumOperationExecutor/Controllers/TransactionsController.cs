@@ -1,12 +1,12 @@
-using System;
+﻿using System;
 using System.Threading.Tasks;
 using MAVN.Service.QuorumOperationExecutor.Client;
 using MAVN.Service.QuorumOperationExecutor.Client.Models.Responses;
 using MAVN.Service.QuorumOperationExecutor.Domain.Services;
 using Microsoft.AspNetCore.Mvc;
 
-using DomainTransactionState = Lykke.Service.QuorumOperationExecutor.Domain.TransactionState;
-using ClientTransactionState = Lykke.Service.QuorumOperationExecutor.Client.Models.Responses.TransactionState;
+using DomainTransactionState = MAVN.Service.QuorumOperationExecutor.Domain.TransactionState;
+using ClientTransactionState = MAVN.Service.QuorumOperationExecutor.Client.Models.Responses.TransactionState;
 
 namespace MAVN.Service.QuorumOperationExecutor.Controllers
 {
