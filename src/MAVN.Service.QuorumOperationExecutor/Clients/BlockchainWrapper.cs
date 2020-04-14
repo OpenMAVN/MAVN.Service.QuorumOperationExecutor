@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Concurrent;
 using System.Linq;
 using System.Net.Http;
@@ -16,8 +16,8 @@ using Nethereum.JsonRpc.Client;
 using Nethereum.JsonRpc.WebSocketClient;
 using Nethereum.RPC.Eth.Services;
 using Nethereum.Web3;
-using MVNGatewayService = Lykke.PrivateBlockchain.Services.MVNGatewayService;
-using MVNTokenService = Lykke.PrivateBlockchain.Services.MVNTokenService;
+using MVNGatewayService = MAVN.PrivateBlockchain.Services.MVNGatewayService;
+using MVNTokenService = MAVN.PrivateBlockchain.Services.MVNTokenService;
 
 namespace MAVN.Service.QuorumOperationExecutor.Clients
 {

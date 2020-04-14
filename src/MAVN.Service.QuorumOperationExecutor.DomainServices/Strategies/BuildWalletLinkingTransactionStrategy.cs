@@ -1,5 +1,5 @@
-using System;
-using Lykke.PrivateBlockchain.Definitions;
+﻿using System;
+using MAVN.PrivateBlockchain.Definitions;
 using Lykke.Service.PrivateBlockchainFacade.Contract.Operations;
 
 namespace MAVN.Service.QuorumOperationExecutor.DomainServices.Strategies
