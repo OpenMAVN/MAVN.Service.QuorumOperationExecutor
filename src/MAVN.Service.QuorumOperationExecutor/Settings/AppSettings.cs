@@ -1,6 +1,6 @@
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using Lykke.Sdk.Settings;
-using Lykke.Service.QuorumTransactionSigner.Client;
+using MAVN.Service.QuorumTransactionSigner.Client;
 
 namespace MAVN.Service.QuorumOperationExecutor.Settings
 {

@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Autofac;
 using JetBrains.Annotations;
 using Lykke.Common.Log;
@@ -7,7 +7,7 @@ using MAVN.Service.QuorumOperationExecutor.Domain.Services;
 using MAVN.Service.QuorumOperationExecutor.DomainServices;
 using MAVN.Service.QuorumOperationExecutor.DomainServices.Strategies;
 using MAVN.Service.QuorumOperationExecutor.Settings;
-using Lykke.Service.QuorumTransactionSigner.Client;
+using MAVN.Service.QuorumTransactionSigner.Client;
 using Lykke.SettingsReader;
 
 namespace MAVN.Service.QuorumOperationExecutor.Modules
