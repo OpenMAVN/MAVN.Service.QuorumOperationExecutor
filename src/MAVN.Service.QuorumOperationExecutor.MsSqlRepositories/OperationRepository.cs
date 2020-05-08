@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Transactions;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using MAVN.Service.QuorumOperationExecutor.Domain.Repositories;
 using MAVN.Service.QuorumOperationExecutor.MsSqlRepositories.Contexts;
 using MAVN.Service.QuorumOperationExecutor.MsSqlRepositories.Entities;
