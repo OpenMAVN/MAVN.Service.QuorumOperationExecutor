@@ -1,8 +1,6 @@
 ﻿using System;
 using MAVN.PrivateBlockchain.Definitions;
-using Lykke.Service.PrivateBlockchainFacade.Contract.Operations;
-using Nethereum.Hex.HexConvertors.Extensions;
-
+using MAVN.Service.PrivateBlockchainFacade.Contract.Operations;
 namespace MAVN.Service.QuorumOperationExecutor.DomainServices.Strategies
 {
     public class BuildTransferToExternalTransactionStrategy : BuildTransactionStrategyBase<TransferToExternalContext, SendFunction>, IBuildTransactionStrategy

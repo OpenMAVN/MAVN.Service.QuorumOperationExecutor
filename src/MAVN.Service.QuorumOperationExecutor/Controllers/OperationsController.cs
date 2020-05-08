@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using MAVN.Service.QuorumOperationExecutor.Client;
@@ -6,7 +6,7 @@ using MAVN.Service.QuorumOperationExecutor.Client.Models.Requests;
 using MAVN.Service.QuorumOperationExecutor.Client.Models.Responses;
 using MAVN.Service.QuorumOperationExecutor.Domain;
 using MAVN.Service.QuorumOperationExecutor.Domain.Services;
-using Lykke.Service.QuorumTransactionSigner.Client.Exceptions;
+using MAVN.Service.QuorumTransactionSigner.Client.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 
 using ClientOperationState = MAVN.Service.QuorumOperationExecutor.Client.Models.Responses.OperationState;

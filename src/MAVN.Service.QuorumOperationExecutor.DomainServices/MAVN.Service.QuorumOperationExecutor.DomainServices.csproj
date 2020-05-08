@@ -10,10 +10,10 @@
     <PackageReference Include="MAVN.PrivateBlockchain.MVNToken" Version="1.0.0-beta.1" />
     <PackageReference Include="MAVN.PrivateBlockchain.CustomerRegistry" Version="1.0.0-beta.1" />
     <PackageReference Include="MAVN.PrivateBlockchain.MVNGateway" Version="1.0.0-beta.1" />
-    <PackageReference Include="Falcon.Service.PrivateBlockchainFacade" Version="1.2.0" />
-    <PackageReference Include="Falcon.Service.PrivateBlockchainFacade.Contract" Version="2.9.0" />
-    <PackageReference Include="Falcon.Service.QuorumTransactionSigner.Client" Version="1.2.0" />
     <PackageReference Include="LykkeBiz.Nethereum.Extension" Version="1.0.11" />
+    <PackageReference Include="MAVN.Service.PrivateBlockchainFacade.Client" Version="1.0.1" />
+    <PackageReference Include="MAVN.Service.PrivateBlockchainFacade.Contract" Version="1.0.1" />
+    <PackageReference Include="MAVN.Service.QuorumTransactionSigner.Client" Version="1.0.1" />
     <PackageReference Include="Nethereum.JsonRpc.WebSocketClient" Version="3.6.0" />
     <PackageReference Include="Nethereum.Web3" Version="3.7.1" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />

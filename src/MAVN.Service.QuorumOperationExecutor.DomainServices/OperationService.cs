@@ -10,7 +10,7 @@ using MAVN.Service.QuorumOperationExecutor.Domain.Repositories;
 using MAVN.Service.QuorumOperationExecutor.Domain.Services;
 using MAVN.Service.QuorumOperationExecutor.DomainServices.Extensions;
 using MAVN.Service.QuorumOperationExecutor.DomainServices.Strategies;
-using Lykke.Service.QuorumTransactionSigner.Client;
+using MAVN.Service.QuorumTransactionSigner.Client;
 using MoreLinq;
 using Nethereum.Hex.HexConvertors.Extensions;
 using Nethereum.JsonRpc.Client;

@@ -1,7 +1,7 @@
 using Autofac;
 using JetBrains.Annotations;
 using MAVN.Service.QuorumOperationExecutor.Settings;
-using Lykke.Service.QuorumTransactionSigner.Client;
+using MAVN.Service.QuorumTransactionSigner.Client;
 using Lykke.SettingsReader;
 
 namespace MAVN.Service.QuorumOperationExecutor.Modules
