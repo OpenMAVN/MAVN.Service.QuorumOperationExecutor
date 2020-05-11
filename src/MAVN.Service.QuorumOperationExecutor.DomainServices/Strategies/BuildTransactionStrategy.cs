@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using MAVN.Service.PrivateBlockchainFacade.Contract.Operations;
 using Nethereum.Signer;
 using Newtonsoft.Json;

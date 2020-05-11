@@ -1,4 +1,4 @@
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using Lykke.Sdk.Settings;
 using MAVN.Service.QuorumTransactionSigner.Client;
 

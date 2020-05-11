@@ -1,4 +1,4 @@
-using Autofac;
+﻿using Autofac;
 using JetBrains.Annotations;
 using MAVN.Service.QuorumOperationExecutor.Settings;
 using MAVN.Service.QuorumTransactionSigner.Client;

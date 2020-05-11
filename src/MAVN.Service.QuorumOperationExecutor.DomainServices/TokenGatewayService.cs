@@ -1,4 +1,4 @@
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using MAVN.Numerics;
 using MAVN.Service.QuorumOperationExecutor.Domain.Services;
 

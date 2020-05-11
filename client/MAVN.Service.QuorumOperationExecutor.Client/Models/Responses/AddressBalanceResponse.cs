@@ -1,4 +1,4 @@
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using MAVN.Numerics;
 
 namespace MAVN.Service.QuorumOperationExecutor.Client.Models.Responses

@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Autofac;
 using JetBrains.Annotations;
 using Lykke.Common.Log;
