@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using MAVN.PrivateBlockchain.Definitions;
 using MAVN.Service.PrivateBlockchainFacade.Contract.Operations;
 
