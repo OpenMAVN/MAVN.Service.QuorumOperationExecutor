@@ -1,12 +1,12 @@
-using System.Data.Common;
+﻿using System.Data.Common;
 using JetBrains.Annotations;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.QuorumOperationExecutor.MsSqlRepositories.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace MAVN.Service.QuorumOperationExecutor.MsSqlRepositories.Contexts
 {
-    public class QoeContext : MsSqlContext
+    public class QoeContext : PostgreSQLContext
     {
         private const string Schema = "quorum_operation_executor";
 
@@ -29,7 +29,7 @@ namespace MAVN.Service.QuorumOperationExecutor.MsSqlRepositories.Contexts
         {
         }
 
-        protected override void OnLykkeModelCreating(
+        protected override void OnMAVNModelCreating(
             ModelBuilder modelBuilder)
         {
             modelBuilder
