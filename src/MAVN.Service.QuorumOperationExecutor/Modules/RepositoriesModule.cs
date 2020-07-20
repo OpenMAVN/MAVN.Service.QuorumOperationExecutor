@@ -1,11 +1,11 @@
-using Autofac;
+﻿using Autofac;
 using JetBrains.Annotations;
-using MAVN.Common.MsSql;
 using MAVN.Service.QuorumOperationExecutor.Domain.Repositories;
 using MAVN.Service.QuorumOperationExecutor.MsSqlRepositories;
 using MAVN.Service.QuorumOperationExecutor.MsSqlRepositories.Contexts;
 using MAVN.Service.QuorumOperationExecutor.Settings;
 using Lykke.SettingsReader;
+using MAVN.Persistence.PostgreSQL.Legacy;
 
 namespace MAVN.Service.QuorumOperationExecutor.Modules
 {
@@ -24,7 +24,7 @@ namespace MAVN.Service.QuorumOperationExecutor.Modules
             ContainerBuilder builder)
         {
             builder
-                .RegisterMsSql(
+                .RegisterPostgreSQL(
                     _dbSettings.DataConnString,
                     connString => new QoeContext(connString, false),
                     dbConn => new QoeContext(dbConn));
@@ -32,7 +32,7 @@ namespace MAVN.Service.QuorumOperationExecutor.Modules
             builder
                 .Register(ctx => new OperationRepository
                 (
-                    ctx.Resolve<MsSqlContextFactory<QoeContext>>()
+                    ctx.Resolve<PostgreSQLContextFactory<QoeContext>>()
                 ))
                 .As<IOperationRepository>()
                 .SingleInstance();

@@ -1,9 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Transactions;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.QuorumOperationExecutor.Domain.Repositories;
 using MAVN.Service.QuorumOperationExecutor.MsSqlRepositories.Contexts;
 using MAVN.Service.QuorumOperationExecutor.MsSqlRepositories.Entities;
@@ -14,9 +14,9 @@ namespace MAVN.Service.QuorumOperationExecutor.MsSqlRepositories
 {
     public class OperationRepository : IOperationRepository
     {
-        private readonly MsSqlContextFactory<QoeContext> _contextFactory;
+        private readonly PostgreSQLContextFactory<QoeContext> _contextFactory;
 
-        public OperationRepository(MsSqlContextFactory<QoeContext> contextFactory)
+        public OperationRepository(PostgreSQLContextFactory<QoeContext> contextFactory)
         {
             _contextFactory = contextFactory;
         }
